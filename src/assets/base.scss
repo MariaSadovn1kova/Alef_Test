@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&display=swap');
+
+/* Палитра цветов */
+:root {
+  --vt-c-white: #ffffff;
+
+  --vt-c-gray: #666666;
+  --vt-c-gray-light: #fafafa;
+  --vt-c-gray-extra-ligth: #f1f1f1;
+
+  --vt-c-black: #111;
+
+  --vt-c-blue: #01a7fd;
+}
+
+/* Для удобства создаем перменные для элементов */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-darker: var(--vt-c-gray-light);
+
+  --color-font-ligth: var(--vt-c-gray);
+  --color-font-default: var(--vt-c-black);
+
+  --color-input-border: var(--vt-c-gray-extra-ligth);
+
+  --color-button: var(--vt-c-blue);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+  font-family: Montserrat;
+  font-weight: 500;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
